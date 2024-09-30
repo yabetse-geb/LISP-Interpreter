@@ -1,6 +1,5 @@
 """
-6.101 Lab:
-LISP Interpreter Part 2
+LISP Interpreter
 """
 
 #!/usr/bin/env python3
@@ -8,7 +7,7 @@ import sys
 
 sys.setrecursionlimit(20_000)
 
-# NO ADDITIONAL IMPORTS!
+
 
 
 class Frame:
@@ -656,10 +655,6 @@ def make_initial_frame():
 
 
 if __name__ == "__main__":
-    # NOTE THERE HAVE BEEN CHANGES TO THE REPL, KEEP THIS CODE BLOCK AS WELL
-    # code in this block will only be executed if lab.py is the main file being
-    # run (not when this module is imported)
-
     # 7) command line arguments
     global_frame = make_initial_frame()
     for file_name in sys.argv[1:]:
